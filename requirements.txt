@@ -1,5 +1,5 @@
-Flask==1.1.2
 requests==2.25.1
+Flask==1.1.2
 pymongo[srv]==3.11.4
 reportlab==3.5.67
 twilio==6.58.0

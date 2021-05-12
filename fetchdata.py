@@ -3,6 +3,7 @@ import json
 
 
 def get_data(pin, date):
+    print(pin,date)
     try:
         req = Request('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=' +
                       pin+"&date="+date, headers={'User-Agent': 'Mozilla/5.0'})

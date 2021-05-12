@@ -1,10 +1,11 @@
 import requests
+import json
 
 
 def get_data(pin, date):
     r = requests.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode="+pin+"&date="+date, headers={'User-Agent': 'Mozilla/5.0'})
-    data = r.json()
     check = r.text
+    data = json.loads(check)
     if 'Invalid Pincode' in check:
         return "invalid pincode"
     else:

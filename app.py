@@ -66,7 +66,7 @@ enter your pincode and date separated by comma, for example if your pincode is 1
                             "please find the pdf for more information")
                         gen_pdf(num, data)
                         resp1.media(
-                            "https://b9d59c792d84.ngrok.io/cowin_center/"+num+".pdf")
+                            "/app/"+num+".pdf")
                         return(str(msg))
 
     else:

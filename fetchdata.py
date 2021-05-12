@@ -16,7 +16,6 @@ def get_data(pin, date):
                 for session in sessions:
                     data_all.append({"centre_name": centre["name"], "centre_address": centre["address"],
                                      "availability": session["available_capacity"], "date": session["date"]})
-            print(data_all)
             return (data_all)
         else:
             return ("no centre")
